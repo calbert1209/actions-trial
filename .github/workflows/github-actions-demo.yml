@@ -15,3 +15,4 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "My dirty secret is:${{ secrets.MY_DIRTY_SECRET }}"
