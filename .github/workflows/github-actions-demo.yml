@@ -11,5 +11,4 @@ jobs:
           ENDPOINT: ${{ secrets.ENDPOINT }}
           CONFIGURATION: '{ "method": "GET" }'
       - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}/fetch-api-data-action
+        run: cat ${{ github.workspace }}/fetch-api-data-action/data.json
