@@ -12,3 +12,9 @@ jobs:
           CONFIGURATION: '{ "method": "GET" }'
       - name: List files in the repository
         run: cat ${{ github.workspace }}/fetch-api-data-action/data.json
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.6
+        with:
+          BRANCH: fetched
+          FOLDER: fetch-api-data-action
+          TARGET_FOLDER: data
