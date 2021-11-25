@@ -15,6 +15,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.6
         with:
-          BRANCH: fetched
-          FOLDER: fetch-api-data-action
-          TARGET_FOLDER: data
+          branch: fetched
+          folder: fetch-api-data-action
+          target-folder: data
