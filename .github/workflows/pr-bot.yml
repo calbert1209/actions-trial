@@ -1,0 +1,9 @@
+name: PR Bot
+on: [workflow_dispatch]
+jobs:
+  search-for-prs:
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - name: GH Test 🧪
+        run: gh --version
