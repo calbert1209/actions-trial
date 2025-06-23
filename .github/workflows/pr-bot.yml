@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: development
     env:
-      GH_TOKEN: ${{ github.token }}
+      GH_TOKEN: ${{ secrets.LO_GITHUB_TOKEN }}
     steps:
       - name: GH Test 🧪
         run: gh api '/search/issues?q=is:open%20is:pr%20org:legalforce%20review-requested:calbert1209&advance_search=true'
