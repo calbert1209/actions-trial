@@ -10,5 +10,5 @@ jobs:
       - name: GH Test 🧪
         run: |
           gh api '/search/issues?q=is:open%20is:pr%20org:legalforce%20review-requested:calbert1209&advance_search=true' |
-          jq -r '.items | .[] | \{ url: .url, author: .user.login \}'
+          jq -r ".items | .[] | { url: .url, author: .user.login }"
 
