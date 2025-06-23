@@ -20,4 +20,4 @@ jobs:
         run: cat result.json
 
       - name: Post Review Requests 📮
-        run: echo ls -la
+        run: ls -la
