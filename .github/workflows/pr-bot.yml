@@ -6,4 +6,4 @@ jobs:
     environment: development
     steps:
       - name: GH Test 🧪
-        run: gh --version
+        run: gh api '/search/issues?q=is:open%20is:pr%20org:legalforce%20review-requested:calbert1209&advance_search=true'
