@@ -1,5 +1,9 @@
 name: PR Bot
-on: [workflow_dispatch]
+on: 
+  workflow_dispatch:
+  schedule:
+  - cron: '0 9-20 * * 1-5'
+
 jobs:
   search-for-prs:
     runs-on: ubuntu-latest
