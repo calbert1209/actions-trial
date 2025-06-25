@@ -2,7 +2,10 @@ name: PR Bot
 on: 
   workflow_dispatch:
   schedule:
-  - cron: '0 9-20 * * 1-5'
+    # Every hour from 23:00 to 23:59 UTC
+    - cron: '30 23 * * *'
+    # Every hour from 00:00 to 11:00 UTC
+    - cron: '30 0-11 * * *'
 
 jobs:
   search-for-prs:
